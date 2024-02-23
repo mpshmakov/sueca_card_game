@@ -1,0 +1,27 @@
+def game_start(filename):
+    try: 
+# https://www.programiz.com/python-programming/file-operation
+
+        f = open (filename, mode='r', encoding='utf-8')
+        
+        for i in range(133): # fix this part so it automatically know the range
+            x = f.read(1)
+            y = 0
+            if x == "\\":
+                y+=1
+                
+        
+        nnn = str(f.readline())
+        mainsuit = nnn[1]
+        print(mainsuit)
+        
+        firstteam = 0 # players 1 and 3
+        secondteam = 0 # players 2 and 4
+        
+        roundg = f.readline()
+        
+        
+        
+        
+    finally:
+        f.close()
